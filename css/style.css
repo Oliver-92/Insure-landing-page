@@ -68,6 +68,7 @@ body {
     background-image: url('../images/bg-pattern-mobile-nav.svg');
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: contain;
 
     gap: 3em;
     clip-path: circle(0% at top left);
@@ -158,6 +159,11 @@ body {
     text-decoration: none;
     color: #fff;
     padding: .8em 2.2em;
+}
+
+.cta:hover {
+    background-color: #fff;
+    color: var(--dark-violet);
 }
 
 /* different */
@@ -307,6 +313,10 @@ body {
     text-transform: uppercase;
 }
 
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .footer__link--first {
     margin-bottom: 1em;
     color: var(--dark-grayish-violet);
@@ -315,24 +325,23 @@ body {
 @media (min-width:768px) {
 
     .nav__links:target {
-        clip-path:unset;
+        clip-path: unset;
     }
 
-    .nav__links:target ~ .nav__hamburguer--last {
+    .nav__links:target~.nav__hamburguer--last {
         display: none;
     }
 
     .nav__links {
         display: flex;
         gap: 3em;
-
-
+        background-image: unset;
         position: unset;
         flex-direction: row;
         padding-top: 0;
         background-color: #fff;
         clip-path: unset;
-        transition:unset;
+        transition: unset;
     }
 
 
@@ -346,12 +355,22 @@ body {
         padding: .8em 2em;
     }
 
+    .nav__link:hover {
+        color: var(--very-dark-violet);
+    }
+
+    .nav__link--cta:hover {
+        color: #fff;
+        background-color: var(--very-dark-violet);
+    }
+
     .nav__hamburguer {
         display: none;
     }
 
     .hero {
         background-image: linear-gradient(to bottom, var(--dark-violet) 75%, #fff 75%);
+        background-color: #fff;
     }
 
     .hero__main {
@@ -384,6 +403,21 @@ body {
         top: 0;
         left: 0;
         background-color: #fff;
+    }
+
+    .hero__bg {
+        width: 450px;
+        height: 450px;
+        background-image: url('../images/bg-pattern-intro-left-desktop.svg');
+        left: 0;
+        top: 450px;
+    }
+
+    .right {
+        top: 80px;
+        left: auto;
+        height: 450px;
+        background-image: url('../images/bg-pattern-intro-right-desktop.svg');
     }
 
     .title {
@@ -464,6 +498,18 @@ body {
     .footer__nav {
         width: 20%;
         align-items: flex-start;
+    }
+
+    .footer::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 250px;
+        background-image: url('../images/bg-pattern-footer-desktop.svg');
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
     }
 
 
