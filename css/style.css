@@ -322,6 +322,18 @@ body {
     color: var(--dark-grayish-violet);
 }
 
+.attribution {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.75rem;
+    color: var(--dark-grayish-violet);
+}
+
+.attribution a {
+    color: var(--dark-violet);
+    text-decoration: none;
+}
+
 @media (min-width:768px) {
 
     .nav__links:target {
