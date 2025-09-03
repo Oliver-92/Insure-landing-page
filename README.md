@@ -30,7 +30,7 @@ Los usuarios deberían poder:
 
 ### Links
 
-- [Solución](https://www.frontendmentor.io/solutions/insure-landing-page-flexbox-css-mobile-first-xxxxxx)
+- [Solución](https://www.frontendmentor.io/solutions/insure-landing-page-with-flexbox-LeQhGIui91)
 - [URL del sitio](https://oliver-92.github.io/Insure-landing-page/)
 
 ## Mi proceso
